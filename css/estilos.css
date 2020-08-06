@@ -1,0 +1,26 @@
+.navbar{
+    box-shadow: 2px 2px;
+}
+nav{
+    font-size: 19px;
+    font-weight: bold;
+}
+.bg{
+    background-image: url("https://images6.alphacoders.com/371/thumb-1920-371656.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fb_icono{
+    font-size: 80px;
+    color: blue;
+}
+.ws_icono{
+    font-size: 80px;
+    color: green;
+}
+.mail_icono{
+    font-size: 80px;
+    color: black;
+}

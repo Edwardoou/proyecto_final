@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licoreria Tito's</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d13de57db3.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg">
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+        <!-- logo de la empresa -->
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 70px;" alt="logo"></a>
+        <!-- boton desplegable -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- barra de navegacion deplegada -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item p-1">
+                    <a class="nav-link" href="conocenos.html">Conocenos</a>
+                </li>
+                <li class="nav-item p-1">
+                    <div class="dropdown">
+                        <button class="btn btn-danger text-dark" style="font-size: 19px;font-weight: bold;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</button>
+                        <div class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item text-danger font-weight-bold" href="#">Whisky</a>
+                            <a class="dropdown-item text-danger font-weight-bold" href="#">Ron</a>
+                            <a class="dropdown-item text-danger font-weight-bold" href="#">Cervezas</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item p-1">
+                    <a class="nav-link" href="#redes">Contactos</a>
+                </li>
+                <!-- Barra de busqueda -->
+                <li class="p-1">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" style="width: 400px;" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-dark my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Carrusel de imagenes de los productos -->
+    <div class="container carrusel" style="padding-top: 80px;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <!-- las imagenes del carrusel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/licor.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/licor1.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/licor2.jpg" alt="Third slide">
+                </div>
+            </div>
+            <!-- boton de previo y proximo -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-  hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <p class="text-center text-white">Los pedidos realizados antes de las 9:30 p.m. se entregara el mismo día y en un plazo de 30 min aproximadamente.</p>
+    </div>
+    <!-- crear section -->
+    <section class="p-5 bg-dark">
+        <div class="container">
+            <p class="text-center text-white" style="font-size: 20px;">Ingrese sus datos para registrarse y recibir notificaciones de nuestros nuevos productos</p>
+            <div class="row">
+                <div class="col-md-4 p-1">
+                    <input type="text" class="form-control" placeholder="Ingresar Nombre">
+                </div>
+                <div class="col-md-4 p-1">
+                    <input type="email" class="form-control" placeholder="Ingresar-email">
+                </div>
+                <div class="col-md-4 p-1">
+                    <!-- btn-primary: color primario / btn-md: alto del boton / btn-block: ancho del boton -->
+                    <button class="btn btn-primary btn-md btn-block">Suscribete</button>
+                </div>
+          </div>
+        </div>
+    </section>
+    <!-- caracteristicas mediante card -->
+    <section class="p-5">
+        <div class="container">
+            <h1 class="text-center text-white p-2">LOS LICORES MAS PEDIDOS POR NUESTROS CLIENTES</h1>
+            <div class="row">
+              <div class="col-md-3 p-3">
+                  <div class="card text-center bg-danger text-white">
+                      <div class="card-body">
+                        <img class="d-block w-100" src="img/img3.jpg" alt="">
+                          <h3 class="p-2">Ron Licor <br> 43</h3>
+                          <p style="font-size: 30px;">S/.45.00</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 p-3">
+                  <div class="card text-center bg-danger text-white">
+                      <div class="card-body">
+                          <img class="d-block w-100" src="img/img2.jpg" alt="">
+                          <h3 class="p-2">Whisky <br> Biri Biri</h3>
+                          <p style="font-size: 30px;">S/.80.00</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 p-3">
+                  <div class="card text-center bg-danger text-white">
+                      <div class="card-body">
+                        <img class="d-block w-100" src="img/img4.jpg" alt="">
+                          <h3 class="p-2">Coñac <br> CientOcho</h3>
+                          <p style="font-size: 30px;">S/.77.00</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 p-3">
+                  <div class="card text-center bg-danger text-white">
+                      <div class="card-body">
+                        <img class="d-block w-100" src="img/img1.jpg" alt="">
+                          <h3 class="p-2">Ron <br> Cartavio</h3>
+                          <p style="font-size: 30px;">S/.90.00</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ubicacion -->
+    <div class="container">
+        <h2 class="text-center text-white">NUESTRA UBICACION EN EL MAPA</h2>
+        <iframe style="width: 100%;padding: 50px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6045.5972224098305!2d-73.98829214791027!3d40.74445670372861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfd562120aebccb24!2sNoMad%20Bar!5e0!3m2!1ses!2spe!4v1596688813754!5m2!1ses!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div id="redes"></div>
+        <br><br>
+    </div>
+    <!-- Redes Sociales -->
+    <section class="bg-dark text-center p-4">
+        <div class="container">
+            <h2 class="text-white">Redes Sociales</h2>
+            <p class="text-white">Estas son nuestras redes sociales para que puedas ponerte en contacto con nosotros</p>
+        <!-- redes -->
+            <div class="row">
+                <div class="col-md-4 p-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp-square ws_icono"></i></a>
+                            <h3>Whatsapp</h3>
+                            <p>Para pedidos personales, menores a 10 unidades comunicarse por este medio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fb_icono"></i></a>
+                            <h3>Facebook</h3>
+                            <p>Para pedidos por paquetes, de hasta 20 comunicarse por este medio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="https://mail.google.com" target="_blank"><i class="fas fa-envelope-square mail_icono"></i></a>
+                            <h3>Correo</h3>
+                            <p>Para pedidos al por mayor, comunicarse mediante este medio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FORMULARIOS -->
+    <section class="p-5">
+        <div class="container text-white text-center">
+            <div class="row">
+                <div class="col-lg-6 p-2">
+                    <h3 class="p-4">RECLAMOS O SUGERENCIAS</h3>
+                    <p class="p-4">Si tiene algun reclamo o sugerencia respecto a nuestros servicios<br> Sientase en la libertad de dejarla aqui</p>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-user input-group-text"></i> 
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-envelope-open input-group-text"></i> 
+                            </div>
+                            <input type="email" class="form-control" placeholder="Correo">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-sticky-note input-group-text"></i> 
+                            </div>
+                            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Notas o sugerencias..."></textarea>
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block">Enviar Datos</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <img class="p-2" src="img/esquina.jpg" alt="barra">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+</body>
+</html>
